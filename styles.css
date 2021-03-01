@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/* Normally I like to use Sass for styling, and organize my code when I finished a task. Since the time limitation and project's requirements is plan CSS, my code is quite messy*/
+body {
+	padding: 15px;
+}
+
+.main-container {
+	display: grid;
+	grid-gap: 20px;
+	text-align: center;
+}
+.description-container {
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	justify-content: space-evenly;
+}
+
+.grid-gap {
+	display: grid;
+	grid-gap: 5px;
+}
+
+.padding {
+	padding: 10px;
+}
+.border {
+	border: 1px solid gray;
+}
+
+
+/* Background color*/
+.article-title {
+	background-color: #826e6e;
+}
+.work-illustration {
+	background-color: #f9f5f5;
+}
+
+.PTO {
+	background-color: #826e6e;
+}
+.big-number {
+	color: black;
+	background-color: white;
+}
+.white-text {
+	color: white;
+}
+.work-willing {
+	background-color: yellow;
+}
+.yellow-background {
+	background-color: yellow;
+}
+.text-highlight {
+	font-weight: bolder;
+}
+
+
+/* Img, Link and Button */
+.social-link {
+	display: flex;
+	justify-content: space-around;
+}
+
+.social-link img {
+	width: 20px;
+}
+img {
+	width: 50%;
+}
+
+a {
+	text-decoration: none;
+	color: #dd8c8c;
+	cursor: pointer;
+}
+
+button {
+	border: none;
+	background: none;
+}
+
+/* Media query */
+@media (min-width: 1024px) {
+	.main-container {
+		text-align: start;
+	}
+	.article-container {
+		display: flex;
+	}
+	.yellow-background {
+		display: flex;
+		place-content: center;
+	}
+	.section-container {
+		display: flex;
+	}
+	.work-willing {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.work-willing img {
+		align-self: center;
+	}
+	.work-other {
+		display: flex;
+		flex-direction: column;
+	}
+	.someone-dressed {
+		display: flex;
+	}
+	.work-illustration {
+		text-align-last: center;
+	}
+	.section-container-two {
+		display: flex;
+	}
+	.car {
+		display: flex;
+	}
+	.pet-and-children {
+		display: flex;
+		flex-direction: column;
+		place-content: space-between;
+	}
+}
